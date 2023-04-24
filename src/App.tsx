@@ -5,7 +5,7 @@ import Overview from "./components/Overview";
 function App() {
   return (
     <>
-      <section className="p-5 container mx-auto">
+      <section className="p-8 max-w-7xl mx-auto">
         <Header />
         <Followers />
         <Overview />
