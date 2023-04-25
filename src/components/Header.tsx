@@ -9,7 +9,18 @@ export default function Header() {
           <p className="text-slate-600 font-bold">Total Followers: 23,004</p>
         </div>
 
-        {/* Toggle */}
+        <div className="toggle">
+          <label
+            htmlFor="checkbox"
+            className="font-bold text-slate-600 text-sm cursor-pointer"
+          >
+            Dark Mode
+          </label>
+          <input type="checkbox" className="checkbox" id="checkbox" />
+          <label htmlFor="checkbox" className="label">
+            <div className="ball"></div>
+          </label>
+        </div>
       </header>
     </>
   );
