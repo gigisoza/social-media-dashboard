@@ -10,11 +10,18 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 .toggle {
@@ -38,6 +45,7 @@ body {
   padding: 5px;
   margin: 0 20px;
   width: 50px;
+  min-width: 50px;
   height: 23px;
   cursor: pointer;
 }
@@ -46,7 +54,7 @@ body {
   background: #fff;
   position: absolute;
   top: 2px;
-  left: 4px;
+  right: 4px;
   border-radius: 50%;
   width: 18px;
   height: 18px;
@@ -54,9 +62,13 @@ body {
 }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(24px);
+  transform: translateX(-24px);
 }
 
 .checkbox:checked + .label {
   background: linear-gradient(120deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+.instagram {
+  background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
 }
